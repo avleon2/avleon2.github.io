@@ -1,0 +1,155 @@
+	body {
+	background: black;
+	color: white;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 24px; 
+	font-style: normal; 
+	font-variant: normal;
+}
+
+img {
+	width: 100%;
+}
+
+.topBanner {
+ 	padding: 30px;
+ 	border-bottom: 5px solid darkred;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+}
+
+.navLeft {
+	display: flex;
+}
+
+.navRight {
+	display: flex;
+	align-items: center;
+  	justify-content: flex-end;
+	align-items: center;
+}
+
+.brouseHeadWord span {
+	text-align: center;
+  	text-transform: uppercase;
+  	width: 22px;
+  	text-decoration: none;
+  	text-decoration: inherit;
+}
+
+
+
+.navList {
+	display: inline-block;
+}
+
+.redP {
+	color: darkred;
+	font-size: 20px;
+}
+
+.buttonChange {
+	background-color: #ff5358;
+	border-bottom: 2px solid #e00007;
+	color: white;
+  margin: 10px auto;
+  padding: 10px 0px;
+  font-size: 15px;
+  width: 250px;
+  text-align: center;
+	transition: 0.4s ease-in-out;
+}
+.buttonChange:hover {
+	background-color: #e00007;
+}
+
+
+
+.radio input, .radio label {
+  display: inline;
+}
+
+input, button, select, textarea {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.middle {
+	margin: auto;
+	display:grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-content: space-between;
+  position: relative;
+
+ }
+
+ .box {
+  display: flex;
+  background-color:#333;
+  border-radius:10px;
+  color:#fff;
+  align-items:center;
+  justify-content:center;
+  border: solid darkred;
+  position: relative;
+}
+
+.picText {
+  position: absolute;
+  z-index: auto;
+  align-items: center;
+  justify-content: center;
+  color: #00b7eb;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+#podPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0.2;
+}
+#podPic:hover {
+	opacity: 1;
+	z-index: 5;
+}
+
+#dosPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0.2;
+}
+#dosPic:hover {
+	opacity: 1;
+	z-index: 5;
+}
+
+#rankPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0.2;
+}
+#rankPic:hover {
+	opacity: 1;
+	z-index: 5;
+}
+
+#aboutPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	opacity: 0.2;
+}
+#aboutPic:hover {
+	opacity: 1;
+	z-index: 5;
+}
