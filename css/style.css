@@ -1,7 +1,7 @@
-	body {
+body {
 	background: black;
 	color: white;
-	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 24px; 
 	font-style: normal; 
 	font-variant: normal;
@@ -21,50 +21,120 @@ img {
 
 .navLeft {
 	display: flex;
+	font-size: 30px;
+}
+.redP {
+	color: darkred;
+	font-weight: bolder;
 }
 
-.navRight {
-	display: flex;
-	align-items: center;
-  	justify-content: flex-end;
-	align-items: center;
-}
 
-.brouseHeadWord span {
+.brouseHeadWord {
 	text-align: center;
-  	text-transform: uppercase;
-  	width: 22px;
-  	text-decoration: none;
-  	text-decoration: inherit;
+  text-transform: uppercase;
+  width: 22px;
+  text-decoration: none;
+  text-decoration: inherit;
+  color: white;
+  padding-right: 10px
 }
-
-
 
 .navList {
 	display: inline-block;
 }
 
-.redP {
-	color: darkred;
-	font-size: 20px;
+.navRight {
+	display: flex;
+	align-items: center;
+ 	justify-content: flex-end;
+	align-items: center;
 }
 
-.buttonChange {
-	background-color: #ff5358;
-	border-bottom: 2px solid #e00007;
-	color: white;
-  margin: 10px auto;
-  padding: 10px 0px;
-  font-size: 15px;
-  width: 250px;
-  text-align: center;
-	transition: 0.4s ease-in-out;
+/*REACTIVE CSS*/
+@media (max-width: 1085px) {
+	.navRight {
+		display: none;
+	}
 }
-.buttonChange:hover {
-	background-color: #e00007;
+@media (max-width: 1085px) {
+	.hamburger {
+	    margin: 0 auto;
+	    margin-top: 30px;
+	    width: 30px;
+	    height: 30px;
+	    position: relative;
+	}
+	.hamburger .bar {
+	    padding: 0;
+	    width: 30px;
+	    height: 4px;
+	    background-color: maroon;
+	    display: block;
+	    border-radius: 4px;
+	    transition: all 0.4s ease-in-out;
+	    position: absolute; 
+	}
+	.bar1 {
+	    top: 0;
+	}
+	.bar2, .bar3 {
+	    top: 13.5px;
+	}
+	.bar3 {
+	    right: 0;
+	}
+	.bar4 {
+	    bottom: 0;
+	}
 }
 
+/*HAMBURGER STYLE*/
+/*code by rosalieelphick, Hamburger Styles, vs.1, CodePen*/
+.visuallyHidden {
+	    position: absolute; 
+	    overflow: hidden; 
+	    clip: rect(0 0 0 0); 
+	    height: 1px; width: 1px; 
+	    margin: -1px; padding: 0; border: 0; 
+	}
+.hamburger3 .bar1 {
+	    transform-origin: 5%;
+	}
+.hamburger3 .bar4 {
+	    transform-origin: 5%;
+	}
+.checkbox3:checked + label > .hamburger3 > .bar1{
+	    transform: rotate(45deg);
+	    height: 3px;
+	    width: 42px;
+	}
+.checkbox3:checked + label > .hamburger3 > .bar3{
+	    transform: rotate(45deg);
+	    height: 3px;
+	    background-color: transparent;
+	}
+.checkbox3:checked + label > .hamburger3 > .bar2{
+	    transform: rotate(-45deg);
+	    height: 3px;
+	    background-color: transparent;
+	}
+.checkbox3:checked + label > .hamburger3 > .bar4{
+	    transform: rotate(-45deg);
+	    height: 3px;
+	    width: 42px;
+	}
+ 
+/*END OF HEADER*/
 
+.picRotate {
+	margin: auto;
+	max-width: 100%;
+}
+
+.slides {
+	object-fit: cover;
+	max-width: 100%;
+}
 
 .radio input, .radio label {
   display: inline;
@@ -101,12 +171,13 @@ input, button, select, textarea {
   z-index: auto;
   align-items: center;
   justify-content: center;
-  color: #00b7eb;
+  color: #995c00;
+  /*background-color: darkgoldenrod;*/
   text-transform: uppercase;
-  font-size: 100px;
-}
-
-#podPic {
+  font-size: 5vw;
+ }
+ 
+ #podPic {
 	width: auto;
 	height: auto;
 	max-width: 100%;
@@ -130,26 +201,151 @@ input, button, select, textarea {
 	z-index: 5;
 }
 
-#rankPic {
+#filmPic {
 	width: auto;
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 	opacity: 0.2;
 }
-#rankPic:hover {
+#filmPic:hover {
 	opacity: 1;
 	z-index: 5;
 }
 
-#aboutPic {
+#realPic {
 	width: auto;
 	height: auto;
 	max-width: 100%;
 	max-height: 100%;
 	opacity: 0.2;
 }
-#aboutPic:hover {
+#realPic:hover {
 	opacity: 1;
 	z-index: 5;
 }
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.socialMedia {
+	margin: auto;
+	display:inline-flex;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-content: space-between;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  background-color:#333;
+  border-radius:10px;
+  margin: 50px;
+  color:#fff;
+  align-items:center;
+  justify-content:center;
+  border: solid darkred;
+  position: relative;
+}
+
+@media (max-width: 1085px) {
+	.row {
+		margin: 0px;
+  }
+}
+
+#emailPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#itunesPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#twitterPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#facebookPic {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.bottomPic {
+	display: inline-flex;
+}
+.sixtyPic {
+	max-width: 10%;
+	height: auto;
+}
+
+.eon {
+	font-size: xx-small;
+}
+
+/*MODAL*/
+
+.modalCover {
+  align-items: center;
+  background-color: black;
+  display: inline-flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.modalBox {
+	align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: .8;
+}
+
+#closeModal {
+	background-color: #995c00;
+	border: 2px solid #e00007;
+	color: white;
+  margin: 10px auto;
+  padding: 10px 0px;
+  font-size: 30px;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
+  text-transform: uppercase;
+  width: 500px;
+  text-align: center;
+	transition: 0.4s ease-in-out;
+	position: relative;
+	z-index: auto;
+}
+#closeModal:hover {
+	background-color: #e00007;
+}
+

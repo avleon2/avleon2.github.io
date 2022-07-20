@@ -4,6 +4,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 	<title></title>
 </head>
 <body>
@@ -11,23 +14,36 @@
 		<div class="navLeft">
 			<h3>Bond<span class="redP">(</span>ing<span class="redP">)</span>Over Bond</h3>
 		</div>
+		<div class="hideBurger">
+      		<input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+        	<label for="checkbox3">
+           		<div class="hamburger hamburger3">
+                	<span class="bar bar1"></span>
+                	<span class="bar bar2"></span>
+                	<span class="bar bar3"></span>
+                	<span class="bar bar4"></span>
+            	</div>
+        	</label>
+        </div>
 		<div class="navRight">
 			<div class="brouse">
-				<a class="brouseHeadWord" href="#">PodCast</a>
-				<a class="brouseHeadWord" href="#">Dossier</a>
-				<a class="brouseHeadWord" href="#">Rankings</a>
-				<a class="brouseHeadWord" href="#">About Us</a>
+				<a class="brouseHeadWord" href="#">PodCast |</a>
+				<a class="brouseHeadWord" href="#">Dossier |</a>
+				<a class="brouseHeadWord" href="#">The Films |</a>
+				<a class="brouseHeadWord" href="#">007 in real life</a>
 			</div>
-      	</div>
-	</header>
-	<div>
-		<button class="buttonChange">For Your Eyes Only</button>
+      	</div>       	
+    </header>
+	
+	<div class="picRotate" data-slideshow>
+			<img name="mySlides" class="slides">
 	</div>
+
 	<section>
 		<div>
 			<form>
 			<fieldset>
-				<label for="radio-container">Which 007 Actor is your Favorite?</label>
+				<label for="radio-container">Pick your favorite 007 actor!</label>
 		     	<div class="radio-container">
 		        <div class="radio">
 		        <input type="radio" id="radio1" name="radio-group" checked>
@@ -55,8 +71,7 @@
         	</form>	
         </div>
         		<input type="submit" value="This is my Bond!">
-    		</fieldset>
-      		
+    		</fieldset> 		
 	</section>
 	
 	<section>
@@ -74,23 +89,37 @@
 			<div class="picText">Dosier</div>
 		</div>
 		<div class="box">
-			<img class="picItem" id="rankPic" src="Images/Box1 Bob Modern.jpg">
-			<div class="picText">Rankings</div>
+			<img class="picItem" id="filmPic" src="Images/Box1 Bob Modern.jpg">
+			<div class="picText">The Films</div>
 		</div>
 		<div class="box">
-			<img class="picItem" id="aboutPic" src="Images/Box1 Bob Modern.jpg">
-			<div class="picText">About Us</div>
+			<img class="picItem" id="realPic" src="Images/Box1 Bob Modern.jpg" alt="Bonding Over Bond Modern Logo">
+			<div class="picText"><span class="doubleO"><span>007</span> in Real Life</div>
 		</div>	
 	</section>
 
 	<section class="socialMedia">
-		<div></div>
-		<div>
+		<div class="row">
+			<img class="connect" id ="emailPic" src="Images/Bonding Over Bond e-mail.jpg" alt="Bonding Over Bond gmail">
+		</div>
+		<div class="row">
+			<img class="connect" id ="itunesPic" src="Images/Bonding Over Bond podcast.jpg" alt="Bonding Over Bond Podcast">
+		</div>
+		<div class="row">
+			<img class="connect" id ="twitterPic" src="Images/Bonding Over Bond twitter.jpg" alt="Bonding Over Bond Twitter">
+		</div>
+		<div class="row">
+			<img class="connect" id ="facebookPic" src="Images/Bonding Over Bond facebook.jpg" alt="Bonding Over Bond FB">
+		</div>
+	</section>
+	<section>
+			<button class="show" aria-haspopup="true">TOP SECRET ACCESS</button>
+		
 			<h2>Bond over the BoB Newsletter: FYEO</h2>
   			<hr>
   			<form>
-			    <fieldset>
-			     	<legend>Join the BoB Community!</legend>
+				<fieldset>
+			    	<legend>Join the BoB Community!</legend>
 			     	<label for="full-name">Full Name</label>
 			     	<input type="text" id="full-name" placeholder="M16 Code Name">
 			     	<label for="email">Email</label>
@@ -98,15 +127,29 @@
 			     	<label for="password">Password</label>
 			     	<input type="text" id="password" placeholder="Top Secret [6+ characters]">
 			     	<input type="submit" value="Join!">
-		</div>
+					<button class="close" role="button">X</button>
+				</fieldset>
+	     	</form>
+	    </div>
 	</section>
 	<section class="bottomPic">
-		<img src="images/until next time.jpg" alt="Until Next Time" >
+		<div class="sixtyPic">
+			<img src="Images/sixty years.JPG" alt="60 years">
+		</div>
+		<div class="untilPic">
+			<img src="images/until next time.jpg" alt="Until Next Time">
+		</div>	
 	</section>
 	<footer>
-		<p>2022 Copyright &copy 2018 FreeRevolt, LLC. All rights reserved.</p>
+		<p>BondingOverBond.com &copy 2015-2022 FreeRevolt, LLC. All rights reserved.</p> 
+		<p class="eon">All images, recordings, references, ect. of James Bond & 007 &copy 2022 Danjaq, LLC and Metro-Goldwyn-Mayer Studios Inc. 007, James Bond and related logos are trademarks of Danjaq, LLC. All rights reserved. Fair Use </p>
 	</footer>
 
+	<section class="modalCover">
+       	<img class="modalBox" src="Images/gunbarrel modern.png">
+        <button id="closeModal">Double-O access Only</button>
+      </div>
+    </section>
 
 <script src="js/main.js"></script>
 </body>
