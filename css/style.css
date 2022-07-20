@@ -292,6 +292,29 @@ input, button, select, textarea {
 	max-height: 100%;
 }
 
+#show {
+	background-color: darkred;
+	border: 2px solid #995c00;
+	color: white;
+  margin: 10px auto;
+  padding: 10px 0px;
+  font-size: 30px;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
+  text-transform: uppercase;
+  width: 500px;
+  text-align: center;
+	transition: 0.4s ease-in-out;
+	position: relative;
+	z-index: auto;
+}
+#show:hover {
+	background-color: blue;
+}
+
+/*.newsletter {
+	display: none;
+}*/
+
 .bottomPic {
 	display: inline-flex;
 }
