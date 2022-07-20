@@ -4,13 +4,13 @@ var i = 0;
   var images = [];
   var time = 800;
 
-  images[0] = 'images/Bonding_Header-1.jpg';
-  images[1] = 'images/Bonding_Header-2.jpg'; 
-  images[2] = 'images/Bonding_Header-3.jpg';
-  images[3] = 'images/Bonding_Header-4.jpg'; 
-  images[4] = 'images/Bonding_Header-5.jpg'; 
-  images[5] = 'images/Bonding_Header-6.jpg'; 
-  images[6] = 'images/Bonding_Header-7.jpg';
+  images[0] = 'Images/Bonding_Header-1.jpg';
+  images[1] = 'Images/Bonding_Header-2.jpg'; 
+  images[2] = 'Images/Bonding_Header-3.jpg';
+  images[3] = 'Images/Bonding_Header-4.jpg'; 
+  images[4] = 'Images/Bonding_Header-5.jpg'; 
+  images[5] = 'Images/Bonding_Header-6.jpg'; 
+  images[6] = 'Images/Bonding_Header-7.jpg';
 
   function changeImg(){
     document.mySlides.src = images[i];
