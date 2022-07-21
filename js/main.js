@@ -1,5 +1,18 @@
-//Slidshow
+//Close Modal
+const modal = document.querySelector('.modalCover');
+const cover = document.querySelector('.modalBox');
+const closeModalBtn = document.querySelector('#closeModal');
 
+closeModalBtn.addEventListener('click', modalClose);
+
+function modalClose(){
+  modal.classList.remove('modalCover');
+  cover.classList.remove('modalBox');
+  closeModalBtn.style.display = 'none';
+  cover.style.display = 'none';
+};
+
+//Slidshow
 var i = 0;
   var images = [];
   var time = 800;
@@ -26,36 +39,27 @@ var i = 0;
 
   window.onload = changeImg;
 
-//Close Modal
-const modal = document.querySelector('.modalCover');
-const cover = document.querySelector('.modalBox');
-const closeModalBtn = document.querySelector('#closeModal');
+//Bond Radio close/reopen
+closeRadio.onclick = function(){
+  document.getElementById('openRadio').style.display = 'block'
+  document.getElementById('bondRadio').style.display = 'none'
+};
 
-closeModalBtn.addEventListener('click', modalClose);
+openRadio.onclick = function(){
+  document.getElementById('bondRadio').style.display = 'block'
+  document.getElementById('openRadio').style.display = 'none'  
+};
 
-function modalClose(){
-  modal.classList.remove('modalCover');
-  cover.classList.remove('modalBox');
-  closeModalBtn.style.display = 'none';
-  cover.style.display = 'none';
-}
+//Newsletter open/close
+show.onclick= function(){
+  document.getElementById('appear').style.display = 'block'
+  };
 
-//Newsletter
+closeNews.onclick = function() {
+  document.getElementById('appear').style.display = 'none'
+};
 
-/*const newsletter = document.getElementbyId('appear');
-const openNewsletterBtn = document.getElementbyId('show');
-
-openNewsletterBtn.addEventListener('click', newsletterAppear);
-
-function newsletterAppear(){
-  //newsletter.classList.display('block');
-  document.getElementbyID('appear').style.display= "block";
-}*/
-
-
-
-
-//RadioButton Selection
+//RadioButton Selection ****future project
 
 
 /*var i = 0;

@@ -39,9 +39,9 @@
 			<img name="mySlides" class="slides">
 	</div>
 
-	<section>
-		<div>
-			<form>
+	<section class="bondSelect">
+		<div id="bondRadio">
+		<form>
 			<fieldset> <!--review template + change id to match names + -->
 				<label for="radio-container">Pick your favorite 007 actor!</label>
 		     	<div class="radio-container">
@@ -67,12 +67,14 @@
 		        </div>
 		        <div class="radio">
 		        <input type="radio" id="radio6" name="radio-group">
-		        <label for="radio3"><span>Daniel Craig</span></label>
-		</div>
-		        <input type="submit" value="This is my Bond!">
-        	</form>	           		
-    		</fieldset>		 		
+		        <label for="radio3"><span>Daniel Craig</span></label>		        
+        	</fieldset>
+    	</form>
+    	<button id="closeRadio">This is my 007!</button>
+    	</div>
+    	<button id="openRadio">Recast my 007!</button>    				 		
 	</section>
+		
 	
 	<section class="middle">
 		<div class="box">
@@ -108,13 +110,13 @@
 		</div>
 	</section>
 
-		<button id="show" onclick="document.getElementById('appear').style.display = 'block'">Mi6 ACCESS ONLY</button>
+		<button id="show">Mi6 ACCESS ONLY</button>
 	
 	<section class="newsletter" id="appear">
 		<h2>Bond over the BoB Newsletter: FYEO</h2>			
   		<hr>
-  		<form>
-			<fieldset>		    	
+  		<form>		    	
+			<fieldset>
 		    	<legend>Join the BoB Community!</legend>
 		     	<label for="full-name">Full Name</label>
 		     	<input type="text" id="full-name" placeholder="M16 Code Name">
@@ -125,12 +127,13 @@
 		     	<input type="text" id="confirm password" placeholder="match password or else">		     	
 			</fieldset>		 
 	    </form>
-		<button id="closeNews" onclick="document.getElementById('appear').style.display = 'none'">Join for Double-O Status</button>	
+		<button id="closeNews">Join for Double-O Status</button>	
 	    
 	</section>
 	<section class="bottomPic">
 		<div class="sixtyPic">
-			<img src="Images/sixty years.JPG" alt="60 years">
+			<a href="https://www.007.com/" target="_blank" rel="noopener noreferrer">
+			<img src="Images/sixty years.JPG" alt="60 years"></a>
 		</div>
 		<div class="untilPic">
 			<img src="Images/until next time.jpg" alt="Until Next Time">

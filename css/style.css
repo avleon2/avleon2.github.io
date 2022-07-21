@@ -145,6 +145,10 @@ input, button, select, textarea {
   margin-bottom: 15px;
 }
 
+#openRadio {
+	display: none;
+}
+
 .middle {
 	margin: auto;
 	display:grid;
@@ -354,11 +358,12 @@ input, button, select, textarea {
 }
 
 #closeModal {
-	background-color: #995c00;
-	border: 2px solid #e00007;
+	background-color: black;
 	color: white;
-  margin: 10px auto;
-  padding: 10px 0px;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  display: inline-block;
   font-size: 30px;
   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;  
   text-transform: uppercase;
@@ -367,6 +372,7 @@ input, button, select, textarea {
 	transition: 0.4s ease-in-out;
 	position: relative;
 	z-index: auto;
+	opacity: .8;	
 }
 #closeModal:hover {
 	background-color: #e00007;
