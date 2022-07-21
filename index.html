@@ -108,13 +108,13 @@
 		</div>
 	</section>
 
-		<button id="show">Mi6 ACCESS ONLY</button>
+		<button id="show" onclick="document.getElementById('appear').style.display = 'block'">Mi6 ACCESS ONLY</button>
 	
 	<section class="newsletter" id="appear">
-		<h2>Bond over the BoB Newsletter: FYEO</h2>
+		<h2>Bond over the BoB Newsletter: FYEO</h2>			
   		<hr>
   		<form>
-			<fieldset>
+			<fieldset>		    	
 		    	<legend>Join the BoB Community!</legend>
 		     	<label for="full-name">Full Name</label>
 		     	<input type="text" id="full-name" placeholder="M16 Code Name">
@@ -122,10 +122,11 @@
 		     	<input type="text" id="email" placeholder="name007@email.com">
 		     	<label for="password">Password</label>
 		     	<input type="text" id="password" placeholder="Top Secret [6+ characters]">
-		     	<input type="submit" value="Join!">
-				<button class="close" role="button">X</button>
-			</fieldset>
-	    </form>	    
+		     	<input type="text" id="confirm password" placeholder="match password or else">		     	
+			</fieldset>		 
+	    </form>
+		<button id="closeNews" onclick="document.getElementById('appear').style.display = 'none'">Join for Double-O Status</button>	
+	    
 	</section>
 	<section class="bottomPic">
 		<div class="sixtyPic">

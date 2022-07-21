@@ -42,14 +42,15 @@ function modalClose(){
 
 //Newsletter
 
-/*const newsletter = document.getElementbyId('#appear');
-const openNewsletterBtn = document.getElementbyId('#show');
+/*const newsletter = document.getElementbyId('appear');
+const openNewsletterBtn = document.getElementbyId('show');
 
 openNewsletterBtn.addEventListener('click', newsletterAppear);
 
 function newsletterAppear(){
-  newsletter.classList.display('appear');
-};
+  //newsletter.classList.display('block');
+  document.getElementbyID('appear').style.display= "block";
+}*/
 
 
 
